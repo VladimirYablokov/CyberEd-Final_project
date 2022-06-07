@@ -5,6 +5,7 @@ import s from './Navigation.module.sass'
 import logo from '../media/nav_logo.png'
 import facebook from '../media/facebooklogo.png'
 
+
 export default function Navigation() {
 
   return (
@@ -12,7 +13,7 @@ export default function Navigation() {
         <div className={s.btnBar}>
             <img src={logo} className={s.imgLogo} alt="logo" />
             <p className={s.text}>Pages</p>
-            <ButtonNavPages styles={{background:{facebook}}}/>
+            <ButtonNavPages><img src={facebook} alt="" /></ButtonNavPages>
             <ButtonNavPages/>
             <ButtonNavPages/>
         </div>
