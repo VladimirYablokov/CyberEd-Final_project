@@ -1,12 +1,9 @@
 .main
-    height: 1100px
     background-color: #1B3764
-    padding: 0 50px
+    padding: 50px 50px
     display: flex
     justify-content: space-between
     align-items: center
-
-    
 
 h1
     font-family: 'Cardo'
@@ -17,7 +14,6 @@ h1
     letter-spacing: 1.3px
     color: #FFFFFF
     padding-bottom: 30px
-
 
 h4
     font-family: 'Cardo'
@@ -61,10 +57,42 @@ p
     color: whitesmoke
     p
         cursor: pointer
+        &:hover
+            color: #FFCA42
     
     &::after
         content: ''
         border-bottom: 1px solid white
         width: 60%
         height: 5px
+        
+.mainCards
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    padding-top: 50px
 
+    .cardTitle
+        font-family: 'Cardo'
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 29px
+        letter-spacing: 0.48px
+        color: #FFFFFF
+        &::before
+            content: '•'
+            font-size: 20px
+            color: #FFCA42
+            margin-right: 10px  
+
+    .cardText
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 17px
+        line-height: 27px
+        color: #B4C7E7
+        padding-left: 17px
+        padding-top: 10px

@@ -17,6 +17,20 @@ export default function MainPage() {
               <p>Read Free Demo</p>
             </div>
           </div>
+          <div className={s.mainCards}>
+              <div className={s.card}>
+                <p className={s.cardTitle}>Pages:</p>
+                <p className={s.cardText}>250pages</p>
+              </div>
+              <div className={s.card}>
+                <p className={s.cardTitle}>Length:</p>
+                <p className={s.cardText}>10 Hours</p>
+              </div >
+              <div className={s.card}>
+                <p className={s.cardTitle}>Rating:</p>
+                <p className={s.cardText}>4.5/5 (305 ratings)</p>
+              </div>
+            </div>
         </div>
         <img src={mainImg} alt="THE DARK LIGHT" />
     </div>

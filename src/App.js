@@ -1,5 +1,6 @@
 import MainPage from "./components/MainPage";
 import Navigation from "./components/Navigation";
+import TheAuthorBook from "./components/TheAuthorBook/TheAuthorBook";
 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Navigation/>
       <MainPage/>
+      <TheAuthorBook/>
     </div>
   );
 }
