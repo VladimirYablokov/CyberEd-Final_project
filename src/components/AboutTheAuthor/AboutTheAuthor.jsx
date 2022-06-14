@@ -39,9 +39,7 @@ export default function AboutTheAuthor() {
                     <p className={s.authorName}>John Abraham , Ph.d</p>
                     <p className={s.authorMail}>Mail:  johnabraham@gmail.com</p>
                     <p className={s.authorPhone}>Phone:  (+2) 123 545 9000</p>
-
                 </div>
-
             </div>
         </div>
     </div>
