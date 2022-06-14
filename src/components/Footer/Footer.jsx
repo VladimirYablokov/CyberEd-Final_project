@@ -14,9 +14,6 @@ export default function Footer() {
         </div>
         <div className={s.btns}>
           <ButtonFootPages/>
-          <ButtonFootPages/>
-          <ButtonFootPages/>
-          <ButtonFootPages/>
         </div>
       </div>
       <div className={s.explore}>
@@ -58,15 +55,15 @@ export default function Footer() {
       <div className={s.feedback}>
         <h3>Keep in Touch</h3>
         <div className={s.adress}>
-          <div>Address :</div>
+          <div className={s.adressTitle}>Address :</div>
           <div>
-            <p>24A Kingston St, Los Vegas</p>
-            <p>NC 28202, USA.</p>
+            <p className={s.adressText}>24A Kingston St, Los Vegas</p>
+            <p className={s.adressText}>NC 28202, USA.</p>
           </div>
-          <div>Mail :</div>
-          <div>support@pages.com</div>
-          <div>Phone :</div>
-          <div>(+22) 123 - 4567 - 900</div>
+          <div className={s.adressTitle}>Mail :</div>
+          <a href='mailto:support@pages.com' className={s.adressText}>support@pages.com</a>
+          <div className={s.adressTitle}>Phone :</div>
+          <div href="tel:+221234567900" className={s.adressText}>(+22) 123 - 4567 - 900</div>
         </div>
       </div>
     </div>

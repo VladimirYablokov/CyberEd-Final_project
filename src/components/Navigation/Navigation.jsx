@@ -14,8 +14,6 @@ export default function Navigation() {
             <img src={logo} className={s.imgLogo} alt="logo" />
             <p className={s.text}>Pages</p>
             <ButtonNavPages/>
-            <ButtonNavPages/>
-            <ButtonNavPages/>
         </div>
         <a href="/#" className={s.link}>Home</a>
         <a href="/#" className={s.link}>About</a>
