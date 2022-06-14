@@ -1,4 +1,6 @@
 import AboutTheAuthor from "./components/AboutTheAuthor";
+import ArticlesResources from "./components/ArticlesResources";
+import Footer from "./components/Footer";
 import GetBookCopyToday from "./components/GetBookCopyToday";
 import MainPage from "./components/MainPage";
 import Navigation from "./components/Navigation";
@@ -17,6 +19,8 @@ function App() {
       <TrustedByTheBest/>
       <GetBookCopyToday/>
       <WhatWillYouLearn/>
+      <ArticlesResources/>
+      <Footer/>
     </div>
   );
 }
