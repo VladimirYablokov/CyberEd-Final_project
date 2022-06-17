@@ -1,10 +1,7 @@
-// import React, { useState } from 'react'
 import ButtonNavPages from '../UI/ButtonNavPages/ButtonNavPages'
 import ButtonOrder from '../UI/ButtonOrder/ButtonOrder'
 import s from './Navigation.module.sass'
 import logo from '../media/nav_logo.png'
-// import facebook from '../media/facebooklogo.png'
-
 
 export default function Navigation() {
 

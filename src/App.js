@@ -7,19 +7,42 @@ import Navigation from "./components/Navigation";
 import TheAuthorBook from "./components/TheAuthorBook/TheAuthorBook";
 import TrustedByTheBest from "./components/TrustedByTheBest";
 import WhatWillYouLearn from "./components/WhatWillYouLearn/WhatWillYouLearn";
-
+import { getArticles, getBooks, getPartners, getSkills } from './components/requests';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  const [book, setBook] = useState([])
+  const [partner, setPartner] = useState([])
+  const [skills, setSkills] = useState([])
+  const [articles, setArticles] = useState([])
+
+  useEffect(()=>{
+    getBooks(setBook)
+  },[])
+
+  useEffect(()=>{
+    getPartners(setPartner)
+  },[])
+
+  useEffect(()=>{
+    getSkills(setSkills)
+  },[])
+
+  useEffect(()=>{
+    getArticles(setArticles)
+  },[])
+
   return (
     <div className="App">
       <Navigation/>
       <MainPage/>
-      <TheAuthorBook/>
+      <TheAuthorBook books={book}/>
       <AboutTheAuthor/>
-      <TrustedByTheBest/>
+      <TrustedByTheBest partners={partner}/>
       <GetBookCopyToday/>
-      <WhatWillYouLearn/>
-      <ArticlesResources/>
+      <WhatWillYouLearn skills={skills}/>
+      <ArticlesResources articles={articles}/>
       <Footer/>
     </div>
   );
