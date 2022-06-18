@@ -1,11 +1,14 @@
 .main
-    height: 700px 
     display: flex
     justify-content: center
     flex-direction: column
     align-items: center
-    
-    h2
+    padding: 100px 50px
+
+    h2  
+        display: flex
+        flex-direction: column
+        align-items: center
         font-family: 'Cardo'
         font-style: normal
         font-weight: 400
@@ -14,9 +17,33 @@
         text-align: center
         text-transform: capitalize
         color: #1B3764
+        padding-bottom: 50px
+        &::after
+            content: ''
+            border-bottom: 3px solid #FFCA42
+            width: 50px
+            height: 30px
+    .content
+        display: flex
+        justify-content: space-between
+        position: relative
 
-    &::after
-        content: ''
-        border-bottom: 3px solid #FFCA42
-        width: 50px
-        height: 30px
+        .learn
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            padding-top: 30px
+            padding-right: 30px
+
+        .authorImg
+            z-index: 1
+
+        .borderbox
+            width: 545px
+            height: 640px
+            border: 10px solid #FFCA42
+            position: absolute
+            box-sizing: border-box
+            top: 60px
+            left: 680px
+            z-index: -1

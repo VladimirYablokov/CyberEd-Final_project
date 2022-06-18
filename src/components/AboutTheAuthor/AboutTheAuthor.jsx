@@ -6,8 +6,10 @@ import qr from '../media/authorqr.png'
 export default function AboutTheAuthor() {
   return (
     <div className={s.main}>
-        <img className={s.authorImg} src={authorImg} alt="Author" />
-        <div className={s.borderbox}></div>
+        <div className={s.picture}>
+            <img className={s.authorImg} src={authorImg} alt="Author" />
+            <div className={s.borderbox}></div>
+        </div>
         <div className={s.AboutTheAuthor}>
             <p className={s.AboutTheAuthorTitle}>About The Author</p>
             <p className={s.AboutTheAuthorText}>
