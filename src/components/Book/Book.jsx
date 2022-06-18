@@ -7,10 +7,10 @@ export default function Book({name, price, comment, type, picture}) {
     <div className={s.main}>
         <img src={img} alt={picture}/>
         <div className={s.bookinfo}>
-            <h2>{name}</h2>
+            <h3 className={s.name}>{name}</h3>
             <p className={s.price}>{price}</p>
-            <p>{comment}</p>
-            <p>{type}</p>
+            <p className={s.comment}>{comment}</p>
+            <p className={s.type}>{type}</p>
         </div>
     </div>
   )

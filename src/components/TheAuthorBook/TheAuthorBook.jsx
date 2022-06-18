@@ -6,8 +6,8 @@ import s from './TheAuthorBook.module.sass'
 export default function TheAuthorBook({books}) {
   return (
     <div className={s.main}>
-      <h2>The Author's Book</h2>
-      <div>
+        <h2>The Author's Book</h2>  
+      <div className={s.books}>
         {books.map(book=><Book key={book.id} {...book}/>)}
       </div>
     </div>
