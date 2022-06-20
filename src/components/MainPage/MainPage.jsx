@@ -32,7 +32,7 @@ export default function MainPage() {
               </div>
             </div>
         </div>
-        <img src={mainImg} alt="THE DARK LIGHT" />
+        <img className={s.mainImg} src={mainImg} alt="THE DARK LIGHT" />
     </div>
   )
 }

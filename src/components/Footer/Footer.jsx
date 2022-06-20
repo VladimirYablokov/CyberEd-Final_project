@@ -3,7 +3,6 @@ import s from './Footer.module.sass'
 import logo from '../media/nav_logo.png'
 import ButtonFootPages from '../UI/ButtonFootPages'
 
-
 export default function Footer() {
   return (
     <div className={s.main}>
