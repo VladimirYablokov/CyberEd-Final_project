@@ -1,5 +1,4 @@
 import React from 'react'
-import img from '../media/authorbook1.png'
 import s from './Book.module.sass'
 
 export default function Book({name, price, comment, type, picture}) {

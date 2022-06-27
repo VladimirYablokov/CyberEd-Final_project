@@ -5,24 +5,6 @@
     align-items: center
     padding: 100px 50px
 
-    h2  
-        display: flex
-        flex-direction: column
-        align-items: center
-        font-family: 'Cardo'
-        font-style: normal
-        font-weight: 400
-        font-size: 42px
-        line-height: 50px
-        text-align: center
-        text-transform: capitalize
-        color: #1B3764
-        padding-bottom: 50px
-        &::after
-            content: ''
-            border-bottom: 3px solid #FFCA42
-            width: 50px
-            height: 30px
     .content
         display: flex
         justify-content: space-between
@@ -32,11 +14,15 @@
             display: grid
             grid-template-columns: repeat(2, 1fr)
             grid-template-rows: repeat(2, 1fr)
-            padding-top: 30px
+            grid-gap: 30px
+            padding-top: 50px
             padding-right: 30px
+            padding-bottom: 25px
+            
 
         .authorImg
             z-index: 1
+            filter: drop-shadow(0px 0px 20px rgba(27, 55, 100, 0.3))
 
         .borderbox
             width: 545px
@@ -44,11 +30,11 @@
             border: 10px solid #FFCA42
             position: absolute
             box-sizing: border-box
-            top: 60px
-            left: 680px
+            top: 55px
+            left: 665px
             z-index: -1
 
-@media (max-width: 1300px)
+@media (max-width: 1333px)
     .img
         display: none
         

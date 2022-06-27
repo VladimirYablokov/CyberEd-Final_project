@@ -1,5 +1,4 @@
 import React from 'react'
-import img from '../media/partner1.png'
 import s from './Partners.module.sass'
 
 
