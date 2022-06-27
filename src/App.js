@@ -14,8 +14,8 @@ function App() {
 
   const [book, setBook] = useState([])
   const [partner, setPartner] = useState([])
-  const [skills, setSkills] = useState([])
-  const [articles, setArticles] = useState([])
+  const [skill, setSkills] = useState([])
+  const [article, setArticles] = useState([])
 
   useEffect(()=>{
     getBooks(setBook)
@@ -41,8 +41,8 @@ function App() {
       <AboutTheAuthor/>
       <TrustedByTheBest partners={partner}/>
       <GetBookCopyToday/>
-      <WhatWillYouLearn skills={skills}/>
-      <ArticlesResources articles={articles}/>
+      <WhatWillYouLearn skills={skill}/>
+      <ArticlesResources articles={article}/>
       <Footer/>
     </div>
   );
